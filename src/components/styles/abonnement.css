@@ -1,0 +1,27 @@
+.card {
+  min-width: 300px;
+}
+.d-flex {
+  align-items: center !important;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+}
