@@ -2,7 +2,7 @@ import "../styles/abonnement.css";
 
 export default function CardAbonnement({ nom, prix, freq, date_debut, actif }) {
   return (
-    <div className=" m-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+    
       <div className="card w-auto">
       <div className="card-body">
         <h5 className="card-title">{nom}</h5>
@@ -26,6 +26,6 @@ export default function CardAbonnement({ nom, prix, freq, date_debut, actif }) {
         </div>
       </div>
       </div>
-    </div>
+   
   );
 }

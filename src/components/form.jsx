@@ -2,13 +2,14 @@
 export default function Form({handleConnecte, seConnete}) {
  
   return (
-    <form action="/action_page.php" className="was-validated bg-success rounded mx-lg-3 mx-md-3 mx-sm-0 px-5 align-content-center justify-content-center align-items-center">
+    <form action="/action_page.php" className="col-sm-auto col-lg-4 col-md-8 was-validated bg-success rounded mx-lg-3 mx-md-3 mx-sm-0 px-5 align-content-center justify-content-center align-items-center">
       <h3 className="text-white">
         {seConnete ? " Connectez vous" : "Inscrivez-vous"}
       </h3>
       {!seConnete && (
+        <>
         <div className="mb-3 mt-3">
-          <label htmlFor="nom" class="form-label">
+          <label htmlFor="nom" className="form-label">
             Nom Complet:
           </label>
           <input
@@ -22,26 +23,25 @@ export default function Form({handleConnecte, seConnete}) {
           <div className="valid-feedback">Valide.</div>
           <div className="invalid-feedback">Cette case est obligatoire.</div>
         </div>
-      )}
-      {!seConnete && (
-        <div class="mb-3 mt-3">
-          <label htmlFor="email" class="form-label">
-            Email:
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            placeholder="Enter email"
-            name="email"
-            required
-          />
-          <div class="valid-feedback">Valide.</div>
-          <div class="invalid-feedback">Cette case est obligatoire.</div>
-        </div>
+        <div className="mb-3 mt-3">
+        <label htmlFor="email" className="form-label">
+          Email:
+        </label>
+        <input
+          type="email"
+          className="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+          required
+        />
+        <div className="valid-feedback">Valide.</div>
+        <div className="invalid-feedback">Cette case est obligatoire.</div>
+      </div>
+      </>
       )}
       <div className="mb-3 mt-3">
-        <label htmlFor="uname" class="form-label">
+        <label htmlFor="uname" className="form-label">
           Nom d'utilisateur:
         </label>
         <input
@@ -56,7 +56,7 @@ export default function Form({handleConnecte, seConnete}) {
         <div className="invalid-feedback">Cette case est obligatoire.</div>
       </div>
       <div class="mb-3">
-        <label htmlFor="pwd" class="form-label">
+        <label htmlFor="pwd" className="form-label">
           Mot de passe:
         </label>
         <input

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./layout.css";
+import Logo from  "../../../public/LOGO.png"
 
 export default function Header({ onClick, displayNav }) {
   return (
@@ -7,7 +8,7 @@ export default function Header({ onClick, displayNav }) {
       <div className="navi">
         <Link className="Link" to="/">
           <div className=" logo">
-            <img src="LOGO.png" alt="Logo" />
+            <img src={Logo} alt="Logo" />
             <h1 className="logoName">
               Financial<sub>Goal</sub>
             </h1>

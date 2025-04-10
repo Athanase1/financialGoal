@@ -1,7 +1,7 @@
 export default function Apropos() {
   return (
     <div className="container  ">
-      <h2 className="h1 display-1 text-dark ">À propos </h2>
+      <h2 className="h1 display-1 text-dark text-center">À propos </h2>
       <p>
         <strong>FinancialGoal</strong> est une application conçue pour vous
         aider à gérer facilement tous vos abonnements en un seul endroit.
@@ -12,7 +12,7 @@ export default function Apropos() {
         encore les applications mobiles. Et ces oublis peuvent coûter cher sur
         le long terme.
       </p>
-      <p className="display-6">Avec FinancialGoal, vous pouvez :</p>
+      <p className="display-6 text-dark text-center">Avec FinancialGoal, vous pouvez :</p>
       <ul className="list-group">
         <li className="list-group-item list-group-item-success">
           Ajouter et suivre vos abonnements mensuels ou annuels

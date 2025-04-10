@@ -7,7 +7,7 @@ export default function Account() {
     setSeconnecte(!seConnete);
   }
   return (
-    <div className="container1 d-flex flex-row justify-content-end">
+    <div className=" d-flex flex-row justify-content-end container1">
         <Form handleConnecte={handleConnecte} seConnete={seConnete}/>
     </div>
   );

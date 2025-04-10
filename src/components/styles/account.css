@@ -1,7 +1,10 @@
 .container1{
-    background-image: url("bg.jpeg");
-    width: 100vw !important;
+    background-image: url("/bg.jpeg");
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center !important;
     background-size: cover;
     background-repeat: no-repeat;
 }
