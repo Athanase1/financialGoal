@@ -45,12 +45,12 @@ export default function Tips() {
     ];
 
     return (
-        <div className="container mt-5">
-            <h2 className="text-center mb-4 display-1">10 Astuces pour mieux gérer vos abonnements</h2>
-            <div className="row">
+        <div className="container mt-5 overflow-hidden w-100 ">
+            <h2 className=" mb-4 display-1 text-center text-success">10 Astuces pour mieux gérer vos abonnements<i className="bi bi-magic text-success"></i></h2>
+            <div className="d-flex flex-row  flex-lg-wrap overflow-auto w-100">
                 {tips.map((tip, index) => (
-                    <div className="col-lg-4 col-sm-12 col-md-6 mb-4" key={index}>
-                        <div className="card h-100 bg-success">
+                    <div className="col-lg-3 col-sm-8 col-md-6 m-4" key={index}>
+                        <div className="card h-100 ">
                             <div className="card-body ">
                                 <h5 className="card-title">{tip.title}</h5>
                                 <p className="card-text">{tip.content}</p>

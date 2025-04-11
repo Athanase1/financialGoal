@@ -21,7 +21,7 @@ export default function Home(){
    
     return(
         <>
-        <div className="container col">
+        <div className="container p-1">
             <div className="d-flex w-100 justify-content-between flex-wrap">
                 <h1 className="display-1">Vos abonnements</h1>
                 <h1>Total Mensuel:<span className={bgBon ? "badge bg-success": "badge bg-danger"}>{totalMensuel}</span> $</h1>

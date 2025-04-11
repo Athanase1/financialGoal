@@ -2,7 +2,7 @@
 export default function Form({handleConnecte, seConnete}) {
  
   return (
-    <form action="/action_page.php" className="col-sm-auto col-lg-12 col-md-12 was-validated bg-success rounded mx-lg-3 mx-md-3 mx-sm-0 px-5 align-content-center justify-content-center align-items-center">
+    <form action="/action_page.php" className="m-auto col-sm-12 col-lg-4 col-md-6 was-validated bg-success rounded mx-lg-3 mx-md-3 mx-sm-0  align-content-center justify-content-center align-items-center">
       <h3 className="text-white">
         {seConnete ? " Connectez vous" : "Inscrivez-vous"}
       </h3>
@@ -14,7 +14,7 @@ export default function Form({handleConnecte, seConnete}) {
           </label>
           <input
             type="text"
-            className="form-control"
+            className="form-control w-100"
             id="nom"
             placeholder="Votre nom"
             name="nom"
@@ -29,7 +29,7 @@ export default function Form({handleConnecte, seConnete}) {
         </label>
         <input
           type="email"
-          className="form-control"
+          className="form-control w-100"
           id="email"
           placeholder="Enter email"
           name="email"
@@ -46,7 +46,7 @@ export default function Form({handleConnecte, seConnete}) {
         </label>
         <input
           type="text"
-          className="form-control"
+          className="form-control w-100"
           id="uname"
           placeholder="Enter username"
           name="uname"
@@ -61,7 +61,7 @@ export default function Form({handleConnecte, seConnete}) {
         </label>
         <input
           type="password"
-          className="form-control"
+          className="form-control w-100"
           id="pwd"
           placeholder="Enter password"
           name="pswd"

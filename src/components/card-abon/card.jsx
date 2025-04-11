@@ -3,7 +3,7 @@ import "../styles/abonnement.css";
 export default function CardAbonnement({ nom, prix, freq, date_debut, actif }) {
   return (
     
-      <div className="card w-auto">
+      <div className="card m-2">
       <div className="card-body">
         <h5 className="card-title">{nom}</h5>
         <h6 className="card-subtitle mb-2 text-body-secondary">Prix: {prix}</h6>

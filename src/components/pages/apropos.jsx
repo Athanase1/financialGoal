@@ -1,7 +1,7 @@
 export default function Apropos() {
   return (
-    <div className="container  ">
-      <h2 className="h1 display-1 text-dark text-center">À propos </h2>
+    <div className="container  p-1">
+      <h2 className="h1 display-1 text-dark text-center ">À propos </h2>
       <p>
         <strong>FinancialGoal</strong> est une application conçue pour vous
         aider à gérer facilement tous vos abonnements en un seul endroit.

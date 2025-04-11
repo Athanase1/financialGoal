@@ -1,6 +1,6 @@
 export default function Ajouter(){
     return(
-        <div>
+        <div className="">
             <p>Ajouter</p>
         </div>
     )
