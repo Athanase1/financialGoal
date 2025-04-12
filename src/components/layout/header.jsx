@@ -21,6 +21,11 @@ export default function Header({ onClick, displayNav }) {
       </div>
 
       <nav className={displayNav ? "show" : "nav"}>
+      <li onClick={onClick}>
+          <Link to="/">
+            <i className="bi bi-house-door-fill"></i> Home
+          </Link>
+        </li>
         <li onClick={onClick}>
           <Link to="apropos">
             <i className="bi bi-card-checklist"></i> À propos

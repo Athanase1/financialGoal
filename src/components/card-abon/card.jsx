@@ -1,9 +1,17 @@
+import { useEffect, useState } from "react";
 import "../styles/abonnement.css";
 
+
 export default function CardAbonnement({ nom, prix, freq, date_debut, actif }) {
+    const [freqMensuel, setfreq] = useState(false)
+    useEffect(() =>{
+      if(freq =="mensuel"){
+        setfreq(!freqMensuel)
+      }
+    },[])
   return (
     
-      <div className="card m-2">
+      <div className={freqMensuel ? "card m-2" : "card bg-warning"}>
       <div className="card-body">
         <h5 className="card-title">{nom}</h5>
         <h6 className="card-subtitle mb-2 text-body-secondary">Prix: {prix}</h6>
