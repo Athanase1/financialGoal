@@ -11,7 +11,7 @@ export default function CardAbonnement({ nom, prix, freq, date_debut, actif }) {
     },[])
   return (
     
-      <div className={freqMensuel ? "card m-2" : "card bg-warning"}>
+      <div className={freqMensuel ? "card m-2 shadow" : "card bg-warning shadow"}>
       <div className="card-body">
         <h5 className="card-title">{nom}</h5>
         <h6 className="card-subtitle mb-2 text-body-secondary">Prix: {prix}</h6>

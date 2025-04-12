@@ -7,19 +7,22 @@ export default function Header({ onClick, displayNav }) {
     <header className="bg-success">
       <div className="navi">
         <Link className="Link" to="/">
-          <div className=" logo">
+          <div className=" logo shadow rounded ">
             <img src={Logo} alt="Logo" />
-            <h1 className="logoName">
-              Financial<sub>Goal</sub>
-            </h1>
+          
           </div>
         </Link>
+
         <i
           className={displayNav ? "bi bi-x" : "bi bi-list"}
           onClick={onClick}
         ></i>
       </div>
-
+      <Link className="Link" to="/">
+      <h1 className="logoName fw-bold shadow">
+              Financial<sub>Goal</sub>
+            </h1>
+        </Link>
       <nav className={displayNav ? "show" : "nav"}>
       <li onClick={onClick}>
           <Link to="/">
