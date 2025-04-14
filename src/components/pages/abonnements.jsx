@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { calculerMensuel, dataAbonnements } from "../../assets/abonnement";
 import CardAbonnement from "../card-abon/card";
 import "../styles/abonnement.css";
-import Tips from "../tips";
+import Tips from "./tips";
 
 export default function Abonnements() {
   const [totalMensuel ,setTotal] = useState(0)

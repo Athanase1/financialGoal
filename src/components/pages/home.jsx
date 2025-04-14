@@ -46,13 +46,15 @@ export default function Home() {
           id=""
           className=" col-md-6 col-12 col-lg-6 p-1 d-flex flex-row justify-content-lg-end justify-content-sm-center justify-content-center align-items-center"
         >
-          <img src={Image} class="img-fluid  rounded w-auto" alt="image 1" />
+          <img src={Image} className="img-fluid  rounded w-auto" alt="image 1" />
         </div>
       </div>
       <h1 className="h3 fw-bold w-100 ">Des astuces pour vous</h1>
       
        
-        <div className="card p-2 col-12 col-lg-4 col-md-8">
+        <div className="card p-2 col-12 col-lg-4 col-md-8" onClick={() =>{
+            navigate("/tips")
+        }}>
         <h2 className=" fw-bold h1 text-center ">
           Astuces pour mieux gérer vos abonnements
           <i className="bi bi-magic text-success"></i>
@@ -60,8 +62,8 @@ export default function Home() {
              <img src={Image1} alt="image 1"  className="img-fluid rounded"/>
           
                 <div className="d-flex flex-row flex-wrap justify-content-between w-100">
-                     <p className="fs-6 fs-sm-1 fs-md-4 fs-lg-6 fs-xl-1 fw-bold me-1">Gestion des abonnements: </p>
-                    <i className="bi bi-chevron-right fw-bold fs-6 fs-sm-1 fs-md-4 fs-lg-6 fs-xl-1"></i>
+                     <p className="fs-6 fs-sm-1 fs-md-4 fs-lg-6 fs-xl-1 fw-light m-2">Liste d'astuces pour tirer le meilleurs de vos abonnements: </p>
+                    <i className="bi bi-chevron-right fw-bold fs-6 fs-sm-1 fs-md-4 fs-lg-6 fs-xl-1 "></i>
                 </div>
                 
            

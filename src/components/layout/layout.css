@@ -11,13 +11,14 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   width: 100vw;
-  height: 5vh;
+  height: auto;
   align-items: center;
   padding: 10px;
 }
 nav {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 nav li {
   list-style: none;
@@ -75,6 +76,8 @@ footer div a {
   margin: 0 0.5rem;
 }
 
+
+
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
@@ -85,7 +88,11 @@ footer div a {
   header {
     flex-direction: column;
     align-items: center;
-    height: auto;
+    height: fit-content !important;
+  }
+  .no-scroll {
+    height: 100vh;
+    overflow: hidden;
   }
   .navi {
     display: flex;
@@ -94,6 +101,7 @@ footer div a {
   }
   nav.nav {
     display: none;
+    transition: max-height 0.5s ease-out;
   }
   nav.show {
     height: 100vh;
@@ -101,6 +109,8 @@ footer div a {
     flex-direction: column;
     width: 100vh;
     justify-content: center;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
   }
   nav li {
     margin: 1rem;
@@ -128,5 +138,10 @@ footer div a {
   }
   sub {
     font-size: 2vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  header{
+    flex-direction: column;
   }
 }
