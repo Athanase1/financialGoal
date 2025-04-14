@@ -23,19 +23,14 @@ nav li {
   list-style: none;
   margin: 0 1rem;
 }
-nav li a {
+nav li a{
   text-decoration: none;
-  display: flex;
-  color: #ffffff;
-  font-size: 0.7vw;
-  font-weight: bold;
 }
 nav li a:hover {
   text-decoration: underline;
 }
 .logo {
-  display: flex;
-  align-items: center;
+  cursor: pointer;
 }
 
 .logo img {
@@ -55,7 +50,7 @@ sub {
   font-weight: bold;
   cursor: pointer;
 }
-.bi {
+.bi-list, .bi-x {
   display: none;
 }
 

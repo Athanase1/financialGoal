@@ -20,15 +20,14 @@ export default function Abonnements() {
       }
     }, [totalMensuel]);
   return (
-    <div className="container overflow-hidden w-100 ">
+    <div className="container-fluid ">
         <div className="d-flex w-100 justify-content-end flex-wrap">
                 
                 <h1 className="fs-6 fs-sm-5 fs-md-4 fs-lg-3 fs-xl-1 fw-bold">Total Mensuel:<span className={bgBon ? "badge bg-success": "badge bg-danger"}>{totalMensuel}</span> $</h1>
             </div>
       <h1 className=" fs-2 fs-sm-5 fs-md-4 fs-lg-1 fs-xl-1 w-100 fw-bold">Mes abonnements</h1>
-      <div className="d-flex flex-row flex-lg-wrap overflow-auto w-100 shadow mb-2 rounded">
-        {dataAbonnements.map((abo, index) => ( // Définir index ici
-          <div className="m-2" key={index}>
+      <div className="d-flex flex-row flex-wrap overflow-auto w-100 shadow mb-2 rounded justify-content-center align-items-center">
+        {dataAbonnements.map((abo) => ( 
             <CardAbonnement
               key={abo.id}
               nom={abo.nom}
@@ -37,12 +36,8 @@ export default function Abonnements() {
               date_debut={abo.date_debut}
               actif={abo.actif}
             />
-          </div>
         ))}
       </div>
-      
-        <Tips />
-     
     </div>
   );
 }
